@@ -53,7 +53,7 @@
 
 - name: mysql configuration
   hosts: mysql
-  #become: yes   #Here we disabling the root access becuase root here in mysql, but credentials_mysql.yaml file is in ansbile server
+  become: yes   #Here we disabling the root access becuase root here in mysql, but credentials_mysql.yaml file is in ansbile server
   vars_files:
   - /var/expense/credentials_mysql.yaml
     
